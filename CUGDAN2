@@ -1,0 +1,26 @@
+/**
+ * Write a description of class cugdan2 here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+import java.util.Scanner;
+public class cugdan2
+{
+    public static void main(String[] args) {
+        int[] numbers = {1, 7, 7, 3, 7, 9, 2, 7, 5, 7};
+        int count = countSevens(numbers);
+        System.out.println("The number 7 appears " + count + " times.");
+    }
+
+    public static int countSevens(int[] arr) {
+        int count = 0;
+        for (int num : arr) {
+            if (num == 7) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
+
